@@ -101,3 +101,21 @@ public class ScientificCalculator {
                         System.out.println("Result: " + calculateTangent(degrees));
                     }
                 }
+                case 10 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    if (num <= 0) {
+                        System.out.println("Error: Natural log is undefined for zero or negative numbers.");
+                    } else {
+                        System.out.println("Result: " + calculateNaturalLogarithm(num));
+                    }
+                }
+                case 11 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    if (num <= 0) {
+                        System.out.println("Error: Log base 10 is undefined for zero or negative numbers.");
+                    } else {
+                        System.out.println("Result: " + calculateLogarithmBase10(num));
+                    }
+                }
