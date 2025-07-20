@@ -75,3 +75,29 @@ public class ScientificCalculator {
                         System.out.println("Result: " + calculateSquareRoot(num));
                     }
                 }
+                case 6 -> {
+                    System.out.print("Enter base: ");
+                    double base = scanner.nextDouble();
+                    System.out.print("Enter exponent: ");
+                    double exponent = scanner.nextDouble();
+                    System.out.println("Result: " + calculatePower(base, exponent));
+                }
+                case 7 -> {
+                    System.out.print("Enter angle in degrees: ");
+                    double degrees = scanner.nextDouble();
+                    System.out.println("Result: " + calculateSine(degrees));
+                }
+                case 8 -> {
+                    System.out.print("Enter angle in degrees: ");
+                    double degrees = scanner.nextDouble();
+                    System.out.println("Result: " + calculateCosine(degrees));
+                }
+                case 9 -> {
+                    System.out.print("Enter angle in degrees: ");
+                    double degrees = scanner.nextDouble();
+                    if (degrees % 180 == 90) {
+                        System.out.println("Error: Tangent is undefined at 90°, 270°, etc.");
+                    } else {
+                        System.out.println("Result: " + calculateTangent(degrees));
+                    }
+                }
