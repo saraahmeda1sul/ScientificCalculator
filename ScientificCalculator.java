@@ -58,3 +58,20 @@ public class ScientificCalculator {
                     double[] numbers = getTwoNumbers(scanner);
                     System.out.println("Result: " + multiply(numbers[0], numbers[1]));
                 }
+                case 4 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    if (numbers[1] == 0) {
+                        System.out.println("Error: Cannot divide by zero.");
+                    } else {
+                        System.out.println("Result: " + divide(numbers[0], numbers[1]));
+                    }
+                }
+                case 5 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    if (num < 0) {
+                        System.out.println("Error: Cannot take square root of a negative number.");
+                    } else {
+                        System.out.println("Result: " + calculateSquareRoot(num));
+                    }
+                }
