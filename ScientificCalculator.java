@@ -50,3 +50,11 @@ public class ScientificCalculator {
                     double[] numbers = getTwoNumbers(scanner);
                     System.out.println("Result: " + add(numbers[0], numbers[1]));
                 }
+                case 2 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    System.out.println("Result: " + subtract(numbers[0], numbers[1]));
+                }
+                case 3 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    System.out.println("Result: " + multiply(numbers[0], numbers[1]));
+                }
