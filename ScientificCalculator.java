@@ -45,3 +45,8 @@ public class ScientificCalculator {
                 System.out.println("Exiting calculator. Goodbye!");
                 System.exit(0);
             }
+            switch (choice) {
+                case 1 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    System.out.println("Result: " + add(numbers[0], numbers[1]));
+                }
