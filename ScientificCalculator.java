@@ -36,3 +36,12 @@ public class ScientificCalculator {
         System.out.println("17. Maximum of Two");
         System.out.println("0.  Exit");
     }
+    private static void performOperation(Scanner scanner) {
+        try {
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+
+            if (choice == 0) {
+                System.out.println("Exiting calculator. Goodbye!");
+                System.exit(0);
+            }
