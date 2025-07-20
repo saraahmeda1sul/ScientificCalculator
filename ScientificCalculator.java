@@ -154,3 +154,10 @@ public class ScientificCalculator {
             scanner.nextLine(); // clear invalid input
         }
     }
+    public static double[] getTwoNumbers(Scanner scanner) {
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+        return new double[]{num1, num2};
+    }
