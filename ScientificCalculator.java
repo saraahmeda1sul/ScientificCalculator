@@ -139,3 +139,18 @@ public class ScientificCalculator {
                     double num = scanner.nextDouble();
                     System.out.println("Result: " + floorNumber(num));
                 }
+                case 16 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    System.out.println("Result: " + findMin(numbers[0], numbers[1]));
+                }
+                case 17 -> {
+                    double[] numbers = getTwoNumbers(scanner);
+                    System.out.println("Result: " + findMax(numbers[0], numbers[1]));
+                }
+                default -> System.out.println("Invalid choice. Please try again.");
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input! Please enter valid numbers.");
+            scanner.nextLine(); // clear invalid input
+        }
+    }
