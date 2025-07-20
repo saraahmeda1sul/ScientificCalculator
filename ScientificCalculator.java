@@ -119,3 +119,23 @@ public class ScientificCalculator {
                         System.out.println("Result: " + calculateLogarithmBase10(num));
                     }
                 }
+                case 12 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    System.out.println("Result: " + Math.abs(num));
+                }
+                case 13 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    System.out.println("Result: " + roundNumber(num));
+                }
+                case 14 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    System.out.println("Result: " + ceilingNumber(num));
+                }
+                case 15 -> {
+                    System.out.print("Enter number: ");
+                    double num = scanner.nextDouble();
+                    System.out.println("Result: " + floorNumber(num));
+                }
